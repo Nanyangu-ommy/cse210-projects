@@ -12,7 +12,7 @@ class PromptGenerator
         {
             "What are you grateful for today?",
             "what is a challenging moment you faced today?",
-            "What is a goal you want to achieve this month?",
+            "What is a goal you want to achieve this week?",
             "How did you see the hand of the Lord in your life today.",
             "Did you meet someone new today?"
         };
