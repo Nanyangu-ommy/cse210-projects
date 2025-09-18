@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ScriptureMemorization
 {
-    // Represents a single word in the scripture
+    
     class Word
     {
         public string Text { get; private set; }
@@ -19,7 +19,7 @@ namespace ScriptureMemorization
         public string GetDisplayText() => IsHidden ? new string('_', Text.Length) : Text;
     }
 
-    // Represents the reference of a scripture
+    
     class Reference
     {
         public string Book { get; private set; }
@@ -36,7 +36,6 @@ namespace ScriptureMemorization
         public string GetDisplayText() => $"{Book} {Chapter}:{Verse}";
     }
 
-    // Represents the scripture text
     class Scripture
     {
         private List<Word> words;
@@ -86,7 +85,7 @@ namespace ScriptureMemorization
     {
         static void Main(string[] args)
         {
-            // Create scripture
+            
             Reference reference = new Reference("John", 3, 16);
             string verseText = "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.";
             Scripture scripture = new Scripture(reference, verseText);
